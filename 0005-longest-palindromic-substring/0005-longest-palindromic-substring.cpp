@@ -1,7 +1,7 @@
 class Solution {
 public:
    // P(i, j) == P(i+1, j-1) && s[i] == s[j];
-    string longestPalindrome(string s)
+    string longestPalindrome(string s)//also possible by menacher's algorithm , which can be done in o(n)
     {
         int n = s.size();
         if (n == 0)
@@ -25,6 +25,7 @@ public:
         {
             for (int j = i + 1; j < n; j++)
             {
+               // cout<<s[i]<<" "<<s[j]<<"\n";
                 if (s[i] == s[j])
                 {
                     //If it is of two character OR if its susbtring is palindrome.
