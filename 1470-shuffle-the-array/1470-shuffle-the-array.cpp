@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> shuffle(vector<int>& nums, int n) {// an easy implementation based problem
+    vector<int> shuffle(vector<int>& nums, int n) {// an easy implementation based problem, there is a normal append to a new array solution,but the below solution is much more efficient because it is in place array solution and uses o(1) space :).
         for(int i = 0; i < n; i++){
             nums[i] += nums[n + i] * 10000;
         }
