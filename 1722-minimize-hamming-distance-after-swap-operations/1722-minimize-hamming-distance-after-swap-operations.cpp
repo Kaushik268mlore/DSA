@@ -1,5 +1,5 @@
 class Solution {
-public:
+public:/// totally relied on the discussion page.. more problems on these will be solved.
     vector<int> parent;
     void dsu(int n) {
 		parent.resize(n);
