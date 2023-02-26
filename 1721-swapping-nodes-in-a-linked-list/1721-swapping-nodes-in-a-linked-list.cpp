@@ -13,9 +13,7 @@ public:
     ListNode* swapNodes(ListNode* head, int k) {
         ListNode* root=head;
         vector<int>arr;
-        for(root;root;arr.push_back(root->val),root=root->next){
-            
-        }
+        for(root;root;arr.push_back(root->val),root=root->next){}
         int n=size(arr);
         swap(arr[k-1],arr[n-k]);
         int i;
