@@ -16,9 +16,6 @@ public:
         for(root;root;arr.push_back(root->val),root=root->next){
             
         }
-        //arr.push_back(root->val);
-        
-        //for(auto i:arr)cout<<i<<" ";
         int n=size(arr);
         swap(arr[k-1],arr[n-k]);
         int i;
