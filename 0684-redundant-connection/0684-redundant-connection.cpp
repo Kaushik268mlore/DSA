@@ -13,9 +13,9 @@ public:
     vector<int> findRedundantConnection(vector<vector<int>>& e) {
         int n=e.size();
         vector<int>parent(n+1);
-        for(int i=1;i<=n;i++)parent[i]=i;
+        for(int i=1;i<=n;i++)parent[i]=i;//intitially everyone's their own parent.
         for(auto arr:e){
-            if(find(arr[0],parent)==find(arr[1],parent))return arr;
+            if(find(arr[0],parent)==find(arr[1],parent))return arr;//the edge with the same parent is the redundant edge
             union_(arr[0],arr[1],parent);
         }
     return {};}
