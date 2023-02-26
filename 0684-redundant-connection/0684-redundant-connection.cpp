@@ -3,7 +3,7 @@ public:
     // a very good DSU problem https://www.youtube.com/watch?v=1e67mQ-yBgE&t=0s refer if doubtful.
     int find(int x,vector<int>&arr){
         if(arr[x]==x)return x;
-        return find(arr[x],arr);
+        return arr[x]=find(arr[x],arr);
     }
     void union_(int a,int b,vector<int>&arr,vector<int>&rank){
         a=find(a,arr);
