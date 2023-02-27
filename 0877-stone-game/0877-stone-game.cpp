@@ -1,6 +1,8 @@
 class Solution {
 public:
     bool stoneGame(vector<int>& piles) {
+        //this one's much easier medium , it should be tagged easy actually
+        
         int alice =0,bob=0;
         priority_queue<int>pq(piles.begin(),piles.end());
         for(int i=0;i<piles.size();i++){
