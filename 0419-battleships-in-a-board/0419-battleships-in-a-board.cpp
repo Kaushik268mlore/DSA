@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void dfs(vector<vector<char>>&board , int i,int j){
+    void dfs(vector<vector<char>>&board , int i,int j){//this is a standard DFS question,but i might need more practice, this surprisingly took long time to solve.
         int n=board.size(),m=board[0].size();
         board[i][j]='.';
         int dx[4]={-1,1,0,0};
