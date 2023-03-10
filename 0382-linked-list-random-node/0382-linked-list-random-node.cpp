@@ -8,7 +8,7 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
+class Solution {//some of the easiest mediums i've ever done!!
 public:
     vector<int>arr;
     Solution(ListNode* head) {
