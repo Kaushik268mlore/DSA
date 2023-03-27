@@ -1,7 +1,7 @@
 class Solution {
 private :
     //recursion : TLE
-    //memoization :should work
+    //memoization : works
     int m,n;
     // int dfs(vector<vector<int>>&grid,int i,int j){
     //     if(i>n-1||j>m-1)return INT_MAX;
