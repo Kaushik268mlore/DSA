@@ -2,7 +2,7 @@ class Solution {
 public:
 //     //straightaway seems like binary search 
 // //      (left + right) / 2 to find first element valid
-// // mid = (left + right + 1) / 2to find last element valid
+// // mid = (left + right + 1) / 2to find last element valid , i.e by calculating the ceil all the time 
 //     vector<int>dumm;
 //     long long int off,n;
 //     bool check(long long int mid){
