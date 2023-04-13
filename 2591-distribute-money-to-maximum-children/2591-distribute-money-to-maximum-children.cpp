@@ -6,7 +6,7 @@ public:
         money-=children;
         if(money<0)return -1;
         if(money%7==0&&(money/7)==children)return children;
-        if(money%7==3&&money/7==(children-1))return children -2;//then we analyse the 
+        if(money%7==3&&money/7==(children-1))return children -2;//then we analyse the test cases
         return min(children-1,money/7);
     }
 };
