@@ -11,6 +11,8 @@
  */
 class Solution {
 public:
+    // simple bfs
+    // even using dfs it can be done but by maintaining the current level
     vector<vector<int>> levelOrder(TreeNode* root) {
         vector<vector<int>>res;
         if(!root)return res;
