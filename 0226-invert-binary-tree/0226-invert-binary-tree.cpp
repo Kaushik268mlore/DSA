@@ -11,11 +11,26 @@
  */
 class Solution {
 public:
-    TreeNode* invertTree(TreeNode* root) {
-        if(root){
-            invertTree(root->left);
-            invertTree(root->right);
-            swap(root->left,root->right);
+    // recursive
+    // TreeNode* invertTree(TreeNode* root) {
+    //     if(root){
+    //         invertTree(root->left);
+    //         invertTree(root->right);
+    //         swap(root->left,root->right);
+    //     }
+    // return root;}
+    //iterative using stack
+    TreeNode *invertTree(TreeNode* root){
+        stack<TreeNode*>st;
+        st.push(root);
+        while(!st.empty()){
+            TreeNode* temp=st.top();
+            st.pop();
+            if(temp){
+                st.push(temp->left);
+                st.push(temp->right);
+                swap(temp->left,temp->right);
+            }
         }
     return root;}
 };
