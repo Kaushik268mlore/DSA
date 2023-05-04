@@ -1,5 +1,6 @@
 class Solution {
 public:
+    // this problem is too good
     string predictPartyVictory(string senate) {
         queue<int>r,d;
         int n=senate.size();
