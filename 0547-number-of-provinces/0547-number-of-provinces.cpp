@@ -1,6 +1,7 @@
 class Solution {
 private:
-    // a good problem where we count the connected graphs and just return the count , this can be checked by seeing //if the node is traversed or not and adding a count whenever a non neighbouring node traversal starts its traversal
+    // a good problem where we count the connected graphs and just return the count , this can be checked by seeing 
+// okay so basically just count the number of times bfs is done throught the components 
     int cnt=0;
     void dfs(vector<int>&vis,int node,vector<vector<int>>&adj){
         vis[node]=1;
@@ -33,4 +34,5 @@ public:
         }
     return cnt;
     }
+//     basically just count the number of connected components in the given list and return the count
 };
