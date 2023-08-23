@@ -1,6 +1,7 @@
 class Solution {
 public:
 // okay so apparently the prorblem is to be solved using DP and most likely I'm guessing linear DP.
+//     Edit: it insn't
 //[3,3,4,0,0,3,1,4]
 //so for every day at of the stock price , we have 3 options, buy sell and skip, depending on whether we are at the
 //bought state or not
