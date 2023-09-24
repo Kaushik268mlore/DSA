@@ -22,6 +22,7 @@ public:
             if(nums[i]>right)l=i;
             if(nums[i]>=left)r=i;
             ans+=(r-l);
-        }
+        } 
+        
     return ans;}
 };
